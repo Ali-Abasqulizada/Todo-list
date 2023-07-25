@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+body{
+    background-color: #228B22;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    border: 2px solid #008000;
+    width: 500px;
+    height: 20%;
+    min-width: none;
+    border-radius: 15px;
+    margin-top: 100px;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.todo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+input{
+    border: 2px solid #008000;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    color: #008000;
+    font-size: 25px;
+    font-weight: 600;
+}
+input::placeholder{
+    color: #008000;
+    font-size: 25px;
+    font-weight: 600;
+}
+button{
+    color: #008000;
+    background-color: white;
+    border: 2px solid #008000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition-duration: 0.2s;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+ul li{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #008000;
+    color: #008000;
+    border-radius: 10px;
+    width: 90%;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+ul li p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ul li.checked p{
+    text-decoration: line-through;
+    color: red;
+}
+i{
+    padding-right: 10px;
+    font-size: 25px;
+}
+i:hover{
+    color: red;
+}
